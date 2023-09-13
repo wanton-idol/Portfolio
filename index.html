@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishchal's Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Nishchal Gupta"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Nishchal Gupta">Nishchal Gupta</h1>
+
+            <p class="title">Backend Developer</p>
+            <p class="title" style="margin-top: 5px">
+              Founding Backend Engineer <strong>@PlutoFirst</strong>
+            </p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:guptanishchal218@gmail.com" class="contact-link"
+                  >guptanishchal218@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+919649070075" class="contact-link"
+                  >+91 9649070075</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2000-08-21">August 21, 2000</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Jaipur, Rajasthan, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/wanton-idol"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon class="socials-icons" name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/itsnishchal/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon class="socials-icons" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://twitter.com/its_nishchal"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon class="socials-icons" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/itsnishchal/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon
+                  class="socials-icons"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Certifications</button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Hey, I'm Nishchal Gupta, a Backend Developer driven by an
+              unwavering passion for creating innovative products that have a
+              positive impact. I believe that software development is more than
+              just coding - it's about turning ideas into practical and
+              user-friendly solutions. Throughout my career, I have worked on a
+              diverse range of projects, including mobile apps and web
+              applications.
+            </p>
+
+            <p>
+              My expertise lies in developing robust backend systems backend
+              systems that can effectively support the demands of today's
+              digital landscape. My passion for problem-solving led me to gain
+              experience in multiple programming languages, frameworks, and
+              databases. I enjoy working with modern technology stacks such as
+              Golang, Python, and Node.js, as they offer diverse and flexible
+              solutions.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm Doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="backend icon"
+                    width="50"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend Development</h4>
+
+                  <p class="service-item-text">
+                    Build resilient and scalable backend systems to support the
+                    demands of today's digital landscape.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFNklEQVR4nO2ZbUhbVxjHz5Ttw6aM9UPph/XLVnAwGPswautaRgetolsTS26QSmFV2kmbe4N0Cn4YzlZmO5Xc42pBM926KmOW0e7DxtZBU3PVsqp90cxsvoytCW624tsYjK34jBPNNTnJfcuLNzfNAw/IzfMc7/93nvOckxOEMpaxjBnBoL7+KWCxBVj8BXC8Fzj+b+D4v4DFk8DiXmCxFY53PInS0YDFbweEchhkncVTwPGlKF0MEDwBLD4NHL+qKD4cxDmor89CRjfg+DOahIdDaEJGNuD44siZ5/8Bjsdga9sJJ87nwKnmZ4DFu4DF7cDx/0ZAsDvMyIgGTF82cPxPlHgf2B2vSuac/Pg1YPGfET3BiI0RWGyKMvOvKObZHfnA4v8oCBZkNAMWd1MAsOpcjndSuT3IaAYsnggTYWvbqTrX1raXAuBFRjPg+OUwESfO56jOPd7xLLUEVpDRDKhurj2fnwsBcB+lMwDg+AHg+GGourBVfEaOzAQCi+8Di4vE51UXtgKHR4DFAkofAHhkfabHQyFExBHxJGatLwyjtAFQpU6YWlCG7AFrpc0PA8e7JWNYLNBLJW2bYFx2sPhovvnQMb+lzLbKHOZAD6cBKOaU2cBcWglF+0rhwJ4S2L+neGX/68VXCgsK8zSLt5Sd1E14zADW3VJmg6I3TAEIayBKFg7sNW1XDcB86Jhfb/HxACBuNleIANa9TzUAi45lX2hvgC3XBiHrzj1AY2MxOcnN7R+FFy4NwktOYcM73St5ncKVvE8G5JcEo6P47Nt3YxZOe/bte/DiRQqCU4A8p7Dwcnf/9pQDsOXaYMLEBz33xmgEgLVqEPpSDkBWHGUvtxyiA3AvpxwApCDm6YEh2HWGB1NlLZS+cwoKPmiF3BuCYl5UAE5B+lzBqHhZa7kdGlu7Ak7+lo1p2YiRy1MSb6qsifgfpooaRQgJB2Att0Pv19fBO7sUcCIwWtxZfDEiprG1W3xGxgiFICeCzLzU+xQ0ODYPgJUSLwfANfqLGNPk+HQdQFdYbigEOREHo8x+0M1H39scANYo4ulZDHp1XbMYM/b7PBypqFUcQ04EKXWp9yJLI+kArOV2+PyrH6gXd0muf/JZqEA1Y8mJ2N3gkASw+3SSl4BVw8wTP1JZC2O/PRRjq+s+UlVNciJy+geiVgGZffJZUgE0hjQuJfHEm9t7xVjSB9QuKaXtjAilx1ASnyAAXZoAuEZ+FmOb23sSBoA4PYaanE1dAtUSzS/eJaArAEZDE5RrfvE0Qd0BMCoqIdbmp2YbTAkAjMJBqMnxmWLzk2uohgDAyByFQ5vlh+snP7mGquUonFIAmOCXmpYoX3RauqDhXIemPC1i3nq3TowvqarTDwCTBFcjZtvVbwIQiPhtV79NLwBZm3kh4hSWUg7Ac8m4EnNJXIk53V+mHIA3a84GLjITJZ6MtSPapWine35Hp+v5lAPABK/FvxuArDhuhwPX4q7RSPGd7mUy87Li9QaQSKd+GFH/2yKTAi+fAXBYxwrwhhxVjey9wnSYqwbg8S2u6v3y8brHtxgmvkeYkt73abs183BWbwHx+tDkXDgA97T0vk+byzNXNO5bMGwVjPsX4PLNXzcAuKfnL7km5bc+2q7f9eXfmn7g8xgIhMe/GJh5Ubx7epnMvGbxyTC6IUVzlM7W+7gD8EqUbQaAkGYVMPHHcsnE7JJfawP7ceoBXB7a6Nx9N2cefT/mfx8ZzSZml3yxdPCwbSsIYWjmETKaeWPcwh7LxpixjKGUsf8BAbMn4ZFG5WQAAAAASUVORK5CYII="
+                    alt="open-source icon"
+                    width="50"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Open Source</h4>
+
+                  <p class="service-item-text">
+                    Started contributing in open source to learn and to give
+                    back to the community.
+                  </p>
+                </div>
+              </li>
+
+              <!--<li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-research.svg"
+                    alt="research icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Research</h4>
+
+                  <p class="service-item-text">
+                    Frequently take part in ongoing research in the fields of
+                    Machine/Deep Learning some of which could be viewed on the
+                    Projects section.
+                  </p>
+                </div>
+              </li> -->
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Organisations I Have Worked With</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item" style="margin-right: -30px">
+                <a
+                  href="https://www.linkedin.com/company/plutofirst-1/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/pluto.svg"
+                    alt="client logo"
+                    width="150px"
+                    class="center"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item" style="margin-right: 10px">
+                <a href="https://megdap.com/" target="_blank">
+                  <img
+                    src="https://megdap.com/wp-content/themes/megdap/img/magdap-logo-header.svg"
+                    alt="client logo"
+                    height="40px"
+                    width="200px"
+                    class="center"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://mez.ink/" target="_blank">
+                  <img
+                    src="https://mez.ink/_next/static/images/mezink-logo-full.png"
+                    alt="client logo"
+                    height="40px"
+                    width="200px"
+                    class="center"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://sochngo.com/" target="_blank">
+                  <img
+                    src="./assets/images/Soch-logo-white.svg"
+                    alt="client logo"
+                    height="130px"
+                    width="150px"
+                    class="center"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bharati Vidyapeeth College Of Engineering, Pune
+                </h4>
+
+                <span>2019 — 2023</span>
+
+                <p class="timeline-text">CGPA : 9.3</p>
+                <p class="timeline-text">
+                  Undergradute degree in Computer Science
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Mahala Residential Public School, Sikar
+                </h4>
+
+                <span>2015 — 2018</span>
+
+                <p class="timeline-text">Class 10 CBSE boards: 10 CGPA</p>
+                <p class="timeline-text">Class 12 CBSE boards: 74%</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Founding Backend Engineer
+                </h4>
+                <span>Pluto First</span>
+
+                <span>April 2023 - Present</span>
+
+                <p class="timeline-text">
+                  • Developed core backend functionalities, covering user
+                  registration, authentication, verification, push
+                  notifications, matchmaking algorithm, event management, and
+                  interactive user features, collectively comprising 80% of the
+                  complete backend functionality.<br />
+                  • Collaborated closely with the Co-founder to establish a
+                  robust backend architecture, prioritizing scalability and
+                  optimal performance.<br />
+                  • Automated database migration, authored meticulous unit tests
+                  to maintain code excellence, streamlined development through
+                  Docker, and harnessed AWS for seamless deployment.<br />
+                  • Employed a versatile technology stack encompassing Golang,
+                  MySQL, ElasticSearch, Redis, AWS, Docker, Twilio, and core
+                  programming principles to architect the backend
+                  infrastructure.<br />
+                  • Assumed full responsibility for backend management and
+                  demonstrated leadership by overseeing the Android development
+                  team and fostering productive collaboration across various
+                  departments.<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Developer Intern
+                </h4>
+                <span>Megdap Innovation Labs</span>
+
+                <span>Nov 2022 - Jun 2023</span>
+
+                <p class="timeline-text">
+                  • Spearheaded a real-time speech translation project for the
+                  Indian Parliament, developing the Backend system in Node.js,
+                  utilizing Google Cloud Platform (GCP) and Google APIs.
+                  Achieved a 95% accuracy rate for translating speakers' voices
+                  into various languages, enabling real-time translation for
+                  listeners.<br />
+                  • Conducted audio segmentation, identifying dropouts and
+                  silent segments in audio recordings, providing timestamped
+                  data for these sections, and performed audio denoising using
+                  Python libraries.<br />
+                  • Elevated speech transcription capabilities to a high level,
+                  achieving an impressive 99% transcription accuracy. Pioneered
+                  video intelligence solutions, enabling complete video
+                  transcriptions with word-level start-time references for
+                  effortless navigation.<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Backend Intern</h4>
+                <span>Mezink</span>
+
+                <span>October 2022 - Jan 2023</span>
+
+                <p class="timeline-text">
+                  • Built an automated backend system for generating
+                  e-certificates for ed-tech product users using Golang, NSQ,
+                  and PostgreSQL, which significantly reduced the amount of
+                  manual effort required and time consumed by 90%.<br />
+                  • Incorporated various field types like Rating, Matrix, and
+                  Date, into forms, enhancing their functionality by 40%.<br />
+                  • Developed a feature to export form responses to GoogleSheets
+                  using SheetsAPI, optimizing data analysis process.<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Developer Intern
+                </h4>
+                <span>SOCH (Social Organization Connecting Humans)</span>
+
+                <span>Jan 2022 - June 2022</span>
+
+                <p class="timeline-text">
+                  • Developed a website using HTML, CSS, and JS to showcase the
+                  organization’s vision, objectives, and initiatives.<br />
+                  • Integrated various forms and submitted their response to
+                  googlesheets using JavaScript and Google Apps Script.<br />
+                  • Implemented various animations and loaders to the website as
+                  well as a payment gateway using Razorpay.<br />
+                </p>
+              </li>
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Competitive Programmer</h4>
+                <span>GDSC VIT Chennai</span>
+
+                <span>August 2022 - Present</span>
+
+                <p class="timeline-text">
+                  • Learning CP techniques in Bi-Weekly sessions held by
+                  seniors.<br />
+                  • Attending CP contests.<br />
+                </p>
+              </li> -->
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">ML intern</h4>
+                <span>iNeuron</span>
+
+                <span>July 2022</span>
+
+                <p class="timeline-text">
+                  • Implementing a ML model to predict the price of flight
+                  ticket in the future using previous data.<br />
+                  • Analysed over 1 million data points and were able to get 97%
+                  accuracy.<br />
+                </p>
+              </li> -->
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Backend Development</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MySQL, PostgreSQL, ElasticSearch, Redis</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AWS, Docker, Cloud</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Golang/Python/C/C++/NodeJS</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git/GitHub/Linux</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Backend Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Backend Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="backend development"
+              >
+                <a href="https://github.com/wanton-idol/CLI-Address-Book">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/contact-keeper.jpg"
+                      alt="Contact Keeper CLI"
+                      loading="lazy"
+                      height="500px"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Contact Keeper (CLI)</h3>
+
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://sochngo.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/soch.png"
+                      alt="SOCH NGO"
+                      loading="lazy"
+                      height="500px"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">SOCH NGO</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="backend development"
+              >
+                <a
+                  href="https://github.com/wanton-idol/TO-DO-APP"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/deadline-manager.jpg"
+                      alt="Deadline Manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Deadline Manager
+                  </h3>
+
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="backend development"
+              >
+                <a href="https://github.com/wanton-idol/DiscordBot">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/discord-bot.jpg"
+                      alt="Discord Bot"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Discord Bot</h3>
+
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://wanton-idol.github.io/Fitness-Studio/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/fitness-studio.png"
+                      alt="Fitness Studio"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fitness Studio</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <!-- <article class="blog" data-page="certifications">
+          <header>
+            <h2 class="h2 article-title">Certifications</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1sgWOzWqqen1_k3pP-l3zyaAajlFDhjqX/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/Udemy_logo.svg"
+                      alt="Udemy"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">AI/ML</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-03-07">March 7, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">AI & ML</h3>
+
+                    <p class="blog-text">
+                      Machine Learning certificate from Udemy.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1RS9oxeCvAoep0tRuX1Cawc_eJjW2l1_B/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/Udemy_logo.svg"
+                      alt="Certified Flutter and Dart developer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Flutter</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-06-7">June 7, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Flutter Developer</h3>
+
+                    <p class="blog-text">
+                      Certified flutter and dart developer.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1dFFC2k8HHUhdgjlj1c9YVzbz_Mtj3xaB/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/stanford.svg"
+                      alt="Stanford certificate for supervised machine learning"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">AI/ML</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-03-07">Mar 07, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Stanford Certificate for Supervised Machine Learning
+                    </h3>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1dFFC2k8HHUhdgjlj1c9YVzbz_Mtj3xaB/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/cisco.svg"
+                      alt="Cisco certified network analyst"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Network Analyst</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-07-03">July 03, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Cisco Certified Network Analyst
+                    </h3>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1ePsbYW1odvsxwIx5ypzU30dQVVtRldig/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/hacnkerrank.png"
+                      alt="Problem solving certificate"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Problem Solving</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2021-12-24">Dec 24, 2021</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Problem solving using Python certificate
+                    </h3>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1vNv3gK7RtZ4fu0I2lpmuyom9e-FtqJom/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/hacnkerrank.png"
+                      alt="SQL intermediate certificate"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">SQL</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2021-12-24">Dec 24, 2021</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      SQL intermediate certificate
+                    </h3>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1C_XLZEEH-OLPFwqx2RY5VjLd4raFeVJP/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/spoken.jpeg"
+                      alt="Spoken tutorial"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">C</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-08">Feb 08, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      C Certificate by IIT Bombay
+                    </h3>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://drive.google.com/file/d/1aN0lHbP97O5i6EIHMSLjmzHP9wkyJeSH/view?usp=drive_link"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/spoken.jpeg"
+                      alt="Spoken tutorial"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">C</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-08">Feb 08, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      C++ Certificate by IIT Bombay
+                    </h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article> -->
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d132501.32993027105!2d75.76103939933199!3d26.89985609868304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694155629726!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" enabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
